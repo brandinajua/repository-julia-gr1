@@ -1,0 +1,32 @@
+[project]
+name = "eda-cli"
+version = "0.1.0"
+description = "Mini CLI for EDA CSV files"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "pandas",
+  "numpy",
+  "matplotlib",
+  "typer",
+  "rich",
+  "pytest>=9.0.2",
+  "fastapi>=0.127.0",
+  "uvicorn[standard]>=0.40.0",
+  "python-multipart>=0.0.21",
+]
+
+[project.scripts]
+eda-cli = "eda_cli.cli:app"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.2",
+]
