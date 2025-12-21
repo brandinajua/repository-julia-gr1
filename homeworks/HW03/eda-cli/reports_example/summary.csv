@@ -1,0 +1,4 @@
+name,dtype,non_null,missing,missing_share,unique,is_numeric,min,max,mean,std
+id,int64,5,0,0.0,5,True,1.0,5.0,3.0,1.5811388300841898
+value,float64,4,1,0.2,3,True,10.0,40.0,27.5,15.0
+category,object,5,0,0.0,3,False,,,,
